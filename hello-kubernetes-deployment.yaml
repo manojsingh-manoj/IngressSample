@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-kubernetes-deployment
+  name: hellok
 spec:
   selector:
     matchLabels:
       greeting: hello
       department: kubernetes
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
